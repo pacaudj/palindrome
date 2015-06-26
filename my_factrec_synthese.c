@@ -5,7 +5,7 @@
 ** Login   <pacaud_j@epitech.net>
 ** 
 ** Started on  Sun Oct 19 18:28:00 2014 Jean-Baptiste Pacaud-Paris
-** Last update Fri Jun 26 14:19:40 2015 Jean-Baptiste Pacaud-Paris
+** Last update Fri Jun 26 18:55:40 2015 Jean-Baptiste Pacaud-Paris
 */
 
 int	rec(int nb, int res)
@@ -22,7 +22,7 @@ int	rec(int nb, int res)
 int	my_factorielle_rec(int nb)
 {
   int	res;
-  
+
   res = 1;
   if (nb > 12)
     return (0);
@@ -31,4 +31,3 @@ int	my_factorielle_rec(int nb)
   res = rec(nb, res);
   return (res);
 }
-  
