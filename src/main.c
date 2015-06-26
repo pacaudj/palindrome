@@ -24,6 +24,26 @@ int 			main(int ac, char **av)
 
 int 			my_init(char **arg)
 {
+  if (verif_arg(arg) == -1)
+    return (0);
   my_palin(arg);
 }
 
+int 			verif_arg(char **arg)
+{
+  int 			i;
+
+  i = 3;
+  while (arg[i] != NULL)
+    {
+      if (strcmp(arg[i], "reverse") == 0 && strcmp(arg[i], ">imin") == 0 &&
+      strcmp(arg[i], ">=imin") == 0 && strcmp(arg[i], "<imax") == 0 &&
+	strcmp(arg[i], "<=imax") == 0)
+	{
+	  printf("argument invalide\n");
+	  return (-1);
+	}
+      i++;
+    }
+  return (0);
+}

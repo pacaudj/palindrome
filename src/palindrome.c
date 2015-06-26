@@ -28,6 +28,7 @@ int			my_palin(char **arg)
     }
   printf("%s donne %s en %d itération(s) (en base %s)\n", arg[1], pal, i,
 	 arg[2]);
+  return (1);
 }
 
 char 			*fill_base(int base)

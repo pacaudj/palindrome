@@ -27,6 +27,7 @@ int 		my_init(char **);
 int 		my_palin(char **);
 int 		is_palin(char *);
 int 		P(char, char *);
+int 		verif_arg(char **);
 char 		*my_catch_nbrbase(int, char *);
 char 		*fill_base(int);
 char 		*my_revstr(char *str);
