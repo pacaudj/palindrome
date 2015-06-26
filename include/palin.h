@@ -22,6 +22,7 @@
 
 void		my_error_putchar(char);
 void		my_error_putstr(char *);
+void		init_value(int *, int *);
 int 		my_init(char **);
 int 		my_palin(char **);
 int 		is_palin(char *);

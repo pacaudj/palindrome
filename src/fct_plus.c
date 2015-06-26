@@ -10,7 +10,7 @@
 
 #include		"../include/palin.h"
 
-char    *my_equal(char *nb1, char *nb2)
+char    		*my_equal(char *nb1, char *nb2)
 {
   int   i;
   int   j;
@@ -34,7 +34,7 @@ char    *my_equal(char *nb1, char *nb2)
   return (res);
 }
 
-int     P(char c, char *base)
+int     		P(char c, char *base)
 {
   int   i;
 
@@ -44,16 +44,13 @@ int     P(char c, char *base)
   return (i);
 }
 
-char    *add(char *nb1, char *nb2, char *base)
+char    		*add(char *nb1, char *nb2, char *base)
 {
   char  *result;
   int   ret;
   int   i;
 
-  i = 0;
-  ret = 0;
-  nb1 = strdup(nb1);
-  nb2 = strdup(nb2);
+  init_value(&ret, &i);
   if (my_strlen(nb1) > my_strlen(nb2))
     {
       nb2 = my_revstr(my_equal(nb2, nb1));
@@ -67,11 +64,17 @@ char    *add(char *nb1, char *nb2, char *base)
   result = malloc(my_strlen(nb1) + my_strlen(nb2));
   while (*nb1 && *nb2)
     {
-      result[i++] = base[((P(*nb1, base) + P(*nb2, base) + ret) % my_strlen(base))];
+      result[i++] = base[((P(*nb1, base) + P(*nb2, base) + ret)
+			  % my_strlen(base))];
       ret = (P(*nb1++, base) + P(*nb2++, base) + ret) / my_strlen(base);
     }
-  if (ret == 1)
-    result[i++] = base[1];
+  (ret == 1) ? (result[i++] = base[1]) : 0;
   result[i] = '\0';
   return (my_revstr(result));
+}
+
+void			init_value(int *a, int *b)
+{
+  *a = 0;
+  *b = 0;
 }
