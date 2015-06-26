@@ -26,8 +26,8 @@ int			my_palin(char **arg)
       pal = add(pal, my_revstr(pal), base);
       i++;
     }
-  printf("%s donne %s en %d itération(s) (en base %s)\n", arg[1], pal, i,
-	 arg[2]);
+  printf("%s donne %d en %d itération(s) (en base %s)\n",
+	 arg[1], my_getnbr_base(pal, base), i, arg[2]);
   return (1);
 }
 
