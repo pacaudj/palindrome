@@ -11,10 +11,7 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45959fba-8e3e-4c31-9bdf-c6e93f8e49fd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rev_palin.c" afterPath="$PROJECT_DIR$/src/rev_palin.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="45959fba-8e3e-4c31-9bdf-c6e93f8e49fd" name="Default" comment="" />
     <ignored path="palindrome.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,8 +56,8 @@
           <file leaf-file-name="rev_palin.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/rev_palin.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.82">
-                  <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+                <state vertical-scroll-proportion="0.6">
+                  <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
                   <folding />
                 </state>
               </provider>
@@ -93,8 +90,8 @@
           <file leaf-file-name="palin.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/include/palin.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.56666666">
-                  <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+                <state vertical-scroll-proportion="0.14666666">
+                  <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
                   <folding />
                 </state>
               </provider>
@@ -115,13 +112,13 @@
         <option value="$PROJECT_DIR$/lib/my_str_isalpha.c" />
         <option value="$PROJECT_DIR$/lib/my_str_isalphanum.c" />
         <option value="$PROJECT_DIR$/Makefile" />
-        <option value="$PROJECT_DIR$/include/palin.h" />
         <option value="$PROJECT_DIR$/src/get_nbr_base.c" />
         <option value="$PROJECT_DIR$/src/usefull_fct.c" />
         <option value="$PROJECT_DIR$/src/palindrome.c" />
         <option value="$PROJECT_DIR$/src/main.c" />
         <option value="$PROJECT_DIR$/prerequis.c" />
         <option value="$PROJECT_DIR$/src/parse_param.c" />
+        <option value="$PROJECT_DIR$/include/palin.h" />
         <option value="$PROJECT_DIR$/src/rev_palin.c" />
       </list>
     </option>
@@ -214,6 +211,7 @@
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FASTAtools" />
   </component>
   <component name="RunManager" selected="Application.Build All">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="palindrome" TARGET_NAME="palindrome" CONFIG_NAME="Debug">
@@ -443,14 +441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/palin.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56666666">
-          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/get_nbr_base.c">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -503,10 +493,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/palin.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14666666">
+          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/rev_palin.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82">
-          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.6">
+          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
           <folding />
         </state>
       </provider>

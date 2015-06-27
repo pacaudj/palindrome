@@ -23,7 +23,7 @@ int 			my_rev_palin(char **arg, char **param)
   base = fill_base(atoi(arg[2]));
   if (is_palin(my_catch_nbrbase(atoi(arg[1]), base)) != 1)
     {
-      my_error_putstr("argument invalide\n");
+      my_error_putstr("pas de solution\n");
       return (0);
     }
   pal = my_catch_nbrbase(i, base);
