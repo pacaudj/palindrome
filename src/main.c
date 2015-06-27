@@ -12,7 +12,8 @@
 
 int 			main(int ac, char **av)
 {
-  if (ac < 3 || atoi(av[1]) < 0 || atoi(av[2]) <= 1 || atoi(av[2]) > 10)
+  if (ac < 3 || atoi(av[1]) < 0 || atoi(av[2]) <= 1 || atoi(av[2]) > 10 ||
+    	my_str_isalphanum(av[1]) == 1)
     {
       my_error_putstr("argument invalide\n");
       return (0);
@@ -40,7 +41,7 @@ int 			verif_arg(char **arg)
       strcmp(arg[i], ">=imin") == 0 && strcmp(arg[i], "<imax") == 0 &&
 	strcmp(arg[i], "<=imax") == 0)
 	{
-	  printf("argument invalide\n");
+	  my_error_putstr("argument invalide\n");
 	  return (-1);
 	}
       i++;
