@@ -12,7 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45959fba-8e3e-4c31-9bdf-c6e93f8e49fd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prerequis.c" afterPath="$PROJECT_DIR$/prerequis.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="palindrome.iws" />
@@ -46,16 +45,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="prerequis.c" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/prerequis.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="2.0913706">
-                  <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="palindrome.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/palindrome.c">
               <provider selected="true" editor-type-id="text-editor">
@@ -76,11 +65,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="parse_param.c" pinned="false" current-in-tab="false">
+          <file leaf-file-name="parse_param.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/parse_param.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.40860215">
+                  <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -103,7 +92,7 @@
           <file leaf-file-name="palin.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/include/palin.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8680203">
+                <state vertical-scroll-proportion="0.5253456">
                   <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
                   <folding />
                 </state>
@@ -129,10 +118,10 @@
         <option value="$PROJECT_DIR$/src/get_nbr_base.c" />
         <option value="$PROJECT_DIR$/src/usefull_fct.c" />
         <option value="$PROJECT_DIR$/src/rev_palin.c" />
-        <option value="$PROJECT_DIR$/src/parse_param.c" />
         <option value="$PROJECT_DIR$/src/palindrome.c" />
         <option value="$PROJECT_DIR$/src/main.c" />
         <option value="$PROJECT_DIR$/prerequis.c" />
+        <option value="$PROJECT_DIR$/src/parse_param.c" />
       </list>
     </option>
   </component>
@@ -275,7 +264,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5253664" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2356257" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -413,7 +402,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/palin.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8680203">
+        <state vertical-scroll-proportion="0.5253456">
           <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
           <folding />
         </state>
@@ -451,10 +440,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parse_param.c">
+    <entry file="file://$PROJECT_DIR$/src/main.c">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prerequis.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -467,18 +464,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.c">
+    <entry file="file://$PROJECT_DIR$/src/parse_param.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prerequis.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0913706">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.40860215">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
           <folding />
         </state>
       </provider>

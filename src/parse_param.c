@@ -52,10 +52,10 @@ void			verif_solu(int i, char **param)
   if (param[2] != NULL)
     if (param[2][1] == '=')
       {
-	(get_nb(param[2]) < (i + 1)) ? erreur = 1 : 0;
+	(get_nb(param[2]) < (i - 1)) ? erreur = 1 : 0;
       }
     else
-      (get_nb(param[2]) < i) ? erreur = 1: 0;
+      (get_nb(param[2]) <= i) ? erreur = 1: 0;
   if (erreur == 1)
     {
       my_error_putstr("pas de solution\n");
