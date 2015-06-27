@@ -5,7 +5,7 @@
 ** Login   <pacaud_j@epitech.net>
 **
 ** Started on  Sat Jun 27 09:05:04 2015 Jean-Baptiste Pacaud-Paris
-** Last update Sat Jun 27 09:05:06 2015 Jean-Baptiste Pacaud-Paris
+** Last update Sat Jun 27 14:53:56 2015 Jean-Baptiste Pacaud-Paris
 */
 
 int	rec(int nb, int res)
@@ -35,13 +35,19 @@ int	my_factrec_synthese(int nb)
 int	my_squareroot_synthese(int nb)
 {
   int	sroot;
+  int	i;
 
-  sroot =1;
-  if (nb <= 0)
-    return (0);
-  while (sroot * sroot < nb)
-    sroot++;
-  if (sroot * sroot == nb)
-    return (sroot);
-  return (0);
+  i = 0;
+  sroot = 0;
+  if (nb == 1)
+    return (1);
+  while (i <= (nb / 2))
+    {
+      if ((i * i) == nb)
+	sroot = i;
+      i++;
+    }
+  if (sroot == 0 && nb != 0)
+    return (-1);
+  return (sroot);
 }
