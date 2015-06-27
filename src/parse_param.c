@@ -44,7 +44,7 @@ void			verif_solu(int i, char **param)
   if (param[1] != NULL)
     if (param[1][1] == '=')
       {
-	if (get_nb(param[1]) > (i - 1))
+	if (get_nb(param[1]) > (i + 1))
 	  erreur = 1;
       }
     else
