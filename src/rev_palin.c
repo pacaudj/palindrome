@@ -21,13 +21,14 @@ int 			my_rev_palin(char **arg, char **param)
   my_rev_init(&i, &min, &j);
   (param[2] != NULL) ? min = get_nb(param[2]) : 0;
   base = fill_base(atoi(arg[2]));
-  if (is_palin(arg[1]) != 1)
+  if (is_palin(my_catch_nbrbase(atoi(arg[1]), base)) != 1)
     {
       my_error_putstr("argument invalide\n");
       return (0);
     }
   pal = my_catch_nbrbase(i, base);
-  while (strcmp(pal, arg[1]) != 0 || (j > min && min != -1))
+  while (strcmp(pal, my_catch_nbrbase(atoi(arg[1]), base)) != 0 || (j > min &&
+									   min != -1))
     {
       j = 0;
       pal = my_catch_nbrbase(i, base);

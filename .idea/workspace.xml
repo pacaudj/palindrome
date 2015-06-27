@@ -12,7 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45959fba-8e3e-4c31-9bdf-c6e93f8e49fd" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/3" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rev_palin.c" afterPath="$PROJECT_DIR$/src/rev_palin.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -60,8 +59,8 @@
           <file leaf-file-name="rev_palin.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/rev_palin.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.17333333">
-                  <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+                <state vertical-scroll-proportion="0.4">
+                  <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
@@ -488,14 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/palindrome.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/parse_param.c">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -504,10 +495,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/palindrome.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/rev_palin.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17333333">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.4">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
           <folding />
         </state>
       </provider>
