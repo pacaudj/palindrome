@@ -23,6 +23,7 @@
 void		my_error_putchar(char);
 void		my_error_putstr(char *);
 void		init_value(int *, int *);
+void		verif_solu(int, char **);
 int 		my_ver_palin(char **, char **);
 int 		my_init(char **);
 int 		my_palin(char **, char **);

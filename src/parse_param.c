@@ -33,3 +33,32 @@ char 			*param_inf(char *res, char *str)
       return (str);
   return (res);
 }
+
+void			verif_solu(int i, char **param)
+{
+  int 			erreur;
+
+  erreur = 0;
+  if (param[1] != NULL)
+    if (param[1][1] == '=')
+      {
+	if (get_nb(param[1]) > (i - 1))
+	  erreur = 1;
+      }
+    else
+      (get_nb(param[1]) > i) ? 	erreur = 1 : 0;
+  if (param[2] != NULL)
+    if (param[2][1] == '=')
+      {
+	if (get_nb(param[2]) < (i + 1))
+	  erreur = 1;
+      }
+    else
+      if (get_nb(param[2]) < i)
+	erreur = 1;
+  if (erreur == 1)
+    {
+      my_error_putstr("pas de solution\n");
+      exit (0);
+    }
+}
