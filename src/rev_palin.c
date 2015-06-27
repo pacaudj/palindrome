@@ -34,6 +34,11 @@ int 			my_rev_palin(char **arg, char **param)
 	}
       i++;
     }
+  if (param[1] != NULL && get_nb(param[1]) > i - 1)
+    {
+      my_error_putstr("pas de solution\n");
+      return (0);
+    }
   printf("%d donne %d en %d itération(s) (en base %s)\n",
 	 (i - 1), my_getnbr_base(pal, base), j, arg[2]);
 }

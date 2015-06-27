@@ -22,10 +22,7 @@ int			my_palin(char **arg, char **param)
   nb = atoi(arg[1]);
   pal = my_catch_nbrbase(nb, base);
   if (param != NULL && param[0] != NULL)
-    {
-      my_rev_palin(arg, param);
-      return (0);
-    }
+    return (my_rev_palin(arg, param));
   while (is_palin(pal) == 0 && my_getnbr_base(pal, base) >= 0)
     {
       pal = add(pal, my_revstr(pal), base);
@@ -39,7 +36,6 @@ int			my_palin(char **arg, char **param)
     }
   printf("%s donne %d en %d itération(s) (en base %s)\n",
 	 arg[1], my_getnbr_base(pal, base), i, arg[2]);
-  return (1);
 }
 
 char 			*fill_base(int base)

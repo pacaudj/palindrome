@@ -16,9 +16,8 @@ char            **tri_value(char **value)
   int           j;
   int           ok;
 
-  i = 0;
   j = -1;
-  ok = 0;
+  init_value(&i, &ok);
   if (value[1] == NULL)
     return (value);
   while (ok != 1)
