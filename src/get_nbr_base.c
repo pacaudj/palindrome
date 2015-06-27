@@ -21,6 +21,8 @@ int     		my_getnbr_base(char *str, char *base)
   size = strlen(base);
   i = 0;
   nbr = 0;
+  if (str == NULL)
+    return (-1);
   while (str[i])
     {
       j = 0;

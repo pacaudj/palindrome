@@ -22,18 +22,21 @@ int			my_palin(char **arg, char **param)
   nb = atoi(arg[1]);
   pal = my_catch_nbrbase(nb, base);
   if (param != NULL && param[0] != NULL)
-    my_rev_palin(arg, param);
+    {
+      my_rev_palin(arg, param);
+      return (0);
+    }
   while (is_palin(pal) == 0 && my_getnbr_base(pal, base) >= 0)
     {
       pal = add(pal, my_revstr(pal), base);
       i++;
     }
+  verif_solu(i, param);
   if (my_getnbr_base(pal, base) < 0)
     {
       my_error_putstr("overflow\n");
       return (1);
     }
-  verif_solu(i, param);
   printf("%s donne %d en %d itération(s) (en base %s)\n",
 	 arg[1], my_getnbr_base(pal, base), i, arg[2]);
   return (1);
@@ -82,6 +85,8 @@ int 			is_palin(char *str)
 {
   char 			*tmp;
 
+  if (str == NULL)
+    return (0);
   tmp = my_revstr(str);
   if (strcmp(tmp, str) == 0)
     return (1);
