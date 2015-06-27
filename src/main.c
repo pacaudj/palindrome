@@ -13,7 +13,7 @@
 int 			main(int ac, char **av)
 {
   if (ac < 3 || atoi(av[1]) < 0 || atoi(av[2]) <= 1 || atoi(av[2]) > 10 ||
-    	my_str_isalphanum(av[1]) == 1)
+    	my_str_isalphanum(av[1]) == 1 || my_str_isalphanum(av[2]) == 1)
     {
       my_error_putstr("argument invalide\n");
       return (0);
