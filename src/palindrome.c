@@ -21,10 +21,15 @@ int			my_palin(char **arg)
   base = fill_base(atoi(arg[2]));
   nb = atoi(arg[1]);
   pal = my_catch_nbrbase(nb, base);
-  while (is_palin(pal) == 0)
+  while (is_palin(pal) == 0 && my_getnbr_base(pal, base) >= 0)
     {
       pal = add(pal, my_revstr(pal), base);
       i++;
+    }
+  if (my_getnbr_base(pal, base) < 0)
+    {
+      my_error_putstr("overflow\n");
+      return (1);
     }
   printf("%s donne %d en %d itération(s) (en base %s)\n",
 	 arg[1], my_getnbr_base(pal, base), i, arg[2]);

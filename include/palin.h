@@ -34,5 +34,6 @@ char 		*fill_base(int);
 char 		*my_revstr(char *str);
 char 		*my_equal(char *, char *);
 char 		*add(char *, char *, char *);
+char 		**get_param(char **);
 
 #endif

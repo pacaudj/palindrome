@@ -25,8 +25,12 @@ int 			main(int ac, char **av)
 
 int 			my_init(char **arg)
 {
+  char 			**param;
+
+  param = NULL;
   if (verif_arg(arg) == -1)
     return (0);
+  param = get_param(arg);
   my_palin(arg);
 }
 
@@ -37,9 +41,9 @@ int 			verif_arg(char **arg)
   i = 3;
   while (arg[i] != NULL)
     {
-      if (strcmp(arg[i], "reverse") == 0 && strcmp(arg[i], ">imin") == 0 &&
-      strcmp(arg[i], ">=imin") == 0 && strcmp(arg[i], "<imax") == 0 &&
-	strcmp(arg[i], "<=imax") == 0)
+      if (strcmp(arg[i], "reverse") == 0 && strncmp(arg[i], ">", 1) == 0 &&
+      strncmp(arg[i], ">=", 2) == 0 && strncmp(arg[i], "<", 1) == 0 &&
+	strncmp(arg[i], "<=", 2) == 0)
 	{
 	  my_error_putstr("argument invalide\n");
 	  return (-1);
@@ -47,4 +51,19 @@ int 			verif_arg(char **arg)
       i++;
     }
   return (0);
+}
+
+char 			**get_param(char **arg)
+{
+  int 			i;
+  char 			**param;
+
+  i = 3;
+  param = NULL;
+  while (arg[i] != NULL)
+    {
+      param = my_tab_realloc(param, arg[i]);
+      i++;
+    }
+
 }
