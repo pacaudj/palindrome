@@ -29,11 +29,14 @@ int 		is_palin(char *);
 int 		P(char, char *);
 int 		verif_arg(char **);
 int 		my_getnbr_base(char *, char *);
+int 		is_param_ok(char *);
 char 		*my_catch_nbrbase(int, char *);
 char 		*fill_base(int);
 char 		*my_revstr(char *str);
 char 		*my_equal(char *, char *);
 char 		*add(char *, char *, char *);
 char 		**get_param(char **);
+char 		**tri_value(char **);
+char 		**my_switch(char **, int);
 
 #endif

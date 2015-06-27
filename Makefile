@@ -13,6 +13,7 @@ SRCS    =	src/main.c		\
 		src/palindrome.c	\
 		src/fct_plus.c		\
 		src/get_nbr_base.c	\
+		src/usefull_fct.c
 
 OBJS    =       $(SRCS:.c=.o)
 

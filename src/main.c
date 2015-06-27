@@ -58,12 +58,24 @@ char 			**get_param(char **arg)
   int 			i;
   char 			**param;
 
-  i = 3;
+  i = 2;
   param = NULL;
-  while (arg[i] != NULL)
-    {
-      param = my_tab_realloc(param, arg[i]);
-      i++;
-    }
-
+  while (arg[++i] != NULL)
+    param = my_tab_realloc(param, arg[i]);
+  param = (tri_value(param));
+  i = -1;
+  while (param[++i + 1] != NULL)
+    if (param[i][0] == param[i + 1][0])
+      {
+	my_error_putstr("argument invalide\n");
+	exit(0);
+      }
+  i = -1;
+  while (param[++i] != NULL)
+    if (is_param_ok(param[i]) != 1)
+      {
+	my_error_putstr("argument invalide\n");
+	exit(0);
+      }
+  return (param);
 }
