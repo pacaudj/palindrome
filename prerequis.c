@@ -19,7 +19,7 @@ int	rec(int nb, int res)
   return (res);
 }
 
-int	my_factorielle_rec(int nb)
+int	my_factrec_synthese(int nb)
 {
   int res;
 
@@ -32,7 +32,7 @@ int	my_factorielle_rec(int nb)
   return (res);
 }
 
-int	sroot(int nb)
+int	my_squareroot_synthese(int nb)
 {
   int	sroot;
 
