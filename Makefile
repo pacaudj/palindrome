@@ -14,7 +14,8 @@ SRCS    =	src/main.c		\
 		src/fct_plus.c		\
 		src/get_nbr_base.c	\
 		src/usefull_fct.c	\
-		src/parse_param.c
+		src/parse_param.c	\
+		src/rev_palin.c
 
 OBJS    =       $(SRCS:.c=.o)
 

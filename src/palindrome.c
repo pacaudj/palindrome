@@ -21,6 +21,8 @@ int			my_palin(char **arg, char **param)
   base = fill_base(atoi(arg[2]));
   nb = atoi(arg[1]);
   pal = my_catch_nbrbase(nb, base);
+  if (param != NULL && param[0] != NULL)
+    my_rev_palin(arg, param);
   while (is_palin(pal) == 0 && my_getnbr_base(pal, base) >= 0)
     {
       pal = add(pal, my_revstr(pal), base);

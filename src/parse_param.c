@@ -39,6 +39,8 @@ void			verif_solu(int i, char **param)
   int 			erreur;
 
   erreur = 0;
+  if (param == NULL)
+    return ;
   if (param[1] != NULL)
     if (param[1][1] == '=')
       {
