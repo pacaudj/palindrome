@@ -31,6 +31,19 @@ int			my_palin(char **arg, char **param)
       my_error_putstr("overflow\n");
       return (1);
     }
+  if (param[1] != NULL)
+    if (get_nb(param[1]) > i)
+      {
+	my_error_putstr("pas de solution\n");
+	return (1);
+      }
+  if (param[2] != NULL)
+    if (get_nb(param[2]) < i)
+      {
+	my_error_putstr("pas de solution\n");
+	return (1);
+      }
+
   printf("%s donne %d en %d itération(s) (en base %s)\n",
 	 arg[1], my_getnbr_base(pal, base), i, arg[2]);
   return (1);
