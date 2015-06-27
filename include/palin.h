@@ -24,19 +24,23 @@ void		my_error_putchar(char);
 void		my_error_putstr(char *);
 void		init_value(int *, int *);
 int 		my_init(char **);
-int 		my_palin(char **);
+int 		my_palin(char **, char **);
 int 		is_palin(char *);
 int 		P(char, char *);
 int 		verif_arg(char **);
 int 		my_getnbr_base(char *, char *);
 int 		is_param_ok(char *);
+int 		get_nb(char *);
 char 		*my_catch_nbrbase(int, char *);
 char 		*fill_base(int);
+char 		*param_sup(char *, char *);
+char 		*param_inf(char *, char *);
 char 		*my_revstr(char *str);
 char 		*my_equal(char *, char *);
 char 		*add(char *, char *, char *);
 char 		**get_param(char **);
 char 		**tri_value(char **);
 char 		**my_switch(char **, int);
+char 		**clean_param(char **);
 
 #endif

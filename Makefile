@@ -5,7 +5,7 @@
 ## Login   <pacaud_j@epitech.net>
 ##
 ## Started on  Mon Jun 15 13:28:47 2015 Jean-Baptiste Pacaud-Paris
-## Last update Fri Jun 26 18:28:19 2015 Jean-Baptiste Pacaud-Paris
+## Last update Sat Jun 27 11:36:36 2015 Jean-Baptiste Pacaud-Paris
 ##
 
 SRCS    =	src/main.c		\
@@ -13,7 +13,8 @@ SRCS    =	src/main.c		\
 		src/palindrome.c	\
 		src/fct_plus.c		\
 		src/get_nbr_base.c	\
-		src/usefull_fct.c
+		src/usefull_fct.c	\
+		src/parse_param.c
 
 OBJS    =       $(SRCS:.c=.o)
 

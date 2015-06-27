@@ -19,6 +19,8 @@ char            **tri_value(char **value)
   i = 0;
   j = -1;
   ok = 0;
+  if (value[1] == NULL)
+    return (value);
   while (ok != 1)
     while (value[i] != NULL && value[i + 1] != NULL)
       {
@@ -70,4 +72,38 @@ int 		is_param_ok(char *param)
   if (i < 2)
     return (0);
   return (1);
+}
+
+char 		**clean_param(char **param)
+{
+  int 		i;
+  char 		**res;
+
+  if ((res = malloc(sizeof(char *) * 4)) == NULL)
+    return (NULL);
+  res[0] = NULL;
+  res[1] = NULL;
+  res[2] = NULL;
+  res[3] = NULL;
+  i = 0;
+  while (param[i] != NULL)
+    {
+      if (strcmp(param[i], "reverse") == 0)
+	res[0] = param[i++];
+      while (param[i] != NULL && param[i][0] == '>')
+	res[1] = param_sup(res[1], param[i++]);
+      while (param[i] != NULL && param[i][0] == '<')
+    	res[2] = param_inf(res[2], param[i++]);
+    }
+  return (res);
+}
+
+int 		get_nb(char *nb)
+{
+  int 		i;
+
+  i = 0;
+  while (nb[i] > '9' || nb[i] < '0')
+    i++;
+  return (atoi(nb + i));
 }

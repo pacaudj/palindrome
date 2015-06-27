@@ -10,7 +10,7 @@
 
 #include		"../include/palin.h"
 
-int			my_palin(char **arg)
+int			my_palin(char **arg, char **param)
 {
   int 			nb;
   char 			*base;

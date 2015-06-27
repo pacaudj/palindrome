@@ -26,12 +26,14 @@ int 			main(int ac, char **av)
 int 			my_init(char **arg)
 {
   char 			**param;
+  int 			i;
 
+  i = 0;
   param = NULL;
   if (verif_arg(arg) == -1)
     return (0);
   param = get_param(arg);
-  my_palin(arg);
+  my_palin(arg, param);
 }
 
 int 			verif_arg(char **arg)
@@ -41,9 +43,9 @@ int 			verif_arg(char **arg)
   i = 3;
   while (arg[i] != NULL)
     {
-      if (strcmp(arg[i], "reverse") == 0 && strncmp(arg[i], ">", 1) == 0 &&
-      strncmp(arg[i], ">=", 2) == 0 && strncmp(arg[i], "<", 1) == 0 &&
-	strncmp(arg[i], "<=", 2) == 0)
+      if (strcmp(arg[i], "reverse") != 0 && strncmp(arg[i], ">", 1) != 0 &&
+      strncmp(arg[i], ">=", 2) != 0 && strncmp(arg[i], "<", 1) != 0 &&
+	strncmp(arg[i], "<=", 2) != 0)
 	{
 	  my_error_putstr("argument invalide\n");
 	  return (-1);
@@ -62,14 +64,9 @@ char 			**get_param(char **arg)
   param = NULL;
   while (arg[++i] != NULL)
     param = my_tab_realloc(param, arg[i]);
-  param = (tri_value(param));
-  i = -1;
-  while (param[++i + 1] != NULL)
-    if (param[i][0] == param[i + 1][0])
-      {
-	my_error_putstr("argument invalide\n");
-	exit(0);
-      }
+  if (i == 3)
+    return (NULL);
+  param = tri_value(param);
   i = -1;
   while (param[++i] != NULL)
     if (is_param_ok(param[i]) != 1)
@@ -77,5 +74,7 @@ char 			**get_param(char **arg)
 	my_error_putstr("argument invalide\n");
 	exit(0);
       }
+  i = 0;
+  param = clean_param(param);
   return (param);
 }
