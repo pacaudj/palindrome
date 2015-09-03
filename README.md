@@ -13,6 +13,7 @@ p le palindrome obtenu, affiché en base 10,
 i le plus petit nombre d’itérations pour obtenir un palindrome.
 
 Les contraintes sont :
+
 reverse  : le premier argument est le palindrome résultat (p), et non l’entier de départ (n) ;
 dans ce cas, le plus petit entier n convenant sera affiché.
 
