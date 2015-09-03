@@ -15,10 +15,15 @@ i le plus petit nombre d’itérations pour obtenir un palindrome.
 Les contraintes sont :
 reverse  : le premier argument est le palindrome résultat (p), et non l’entier de départ (n) ;
 dans ce cas, le plus petit entier n convenant sera affiché.
+
 ">imin"  : le palindrome doit être à un nombre d’itérations strictement supérieur à imin
+
 ">=imin" : le palindrome doit être à un nombre d’itérations supérieur ou égal à imin
+
 "<imax"  : le palindrome doit être à un nombre d’itérations strictement inférieur à imax
+
 "<=imax" : le palindrome doit être à un nombre d’itérations inférieur ou égal à imax
+
 
 EXEMPLE
 
